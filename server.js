@@ -20,7 +20,7 @@ const port = args.port || process.env.PORT || 5555;
 fs.readFile(`./public/index.html`, 'utf8', (err, data) => {
     if (err) {
       console.error(err);
-      return
+      return;
     }
     console.log(data);
 
@@ -28,7 +28,7 @@ fs.readFile(`./public/index.html`, 'utf8', (err, data) => {
 
     const server = http.createServer((req, res) => {
       res.statusCode = 200
-      res.setHeader('Content-Type', 'text/html')
+      res.setHeader('Content-Type', `text/html`)
       res.end(data)
     })
 
