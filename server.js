@@ -36,7 +36,7 @@ fs.readFile(`./public/index.html`, 'utf8', (err, data) => {
       console.log(`Server listening on port ${port}`)
     })
 
-  });
+});
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
 
